@@ -1,0 +1,17 @@
+<div class="card card-title text-primary" *ngFor="let card of user">
+  <div
+    class="card-body text-center col-lg-12 col-md-6 col-sm-4"
+    style="cursor: pointer"
+    (click)="getInfo(card.id,card.title)"
+  >
+    <!-- displaying title and body -->
+    <span class="font-weight-bold">Id: </span> {{ card.id }}<br />
+    <span class="font-weight-bold">Title: </span> {{ card.title }}
+  </div>
+</div>
+<!-- 
+<script>
+  getInfo(){
+      alert(card.id+" "+card.title);
+  }
+</script> -->
